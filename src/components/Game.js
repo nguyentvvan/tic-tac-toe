@@ -58,7 +58,14 @@ class Game extends Component {
 				<div className="game-info">
 					<h2>{status}</h2>
 					<ol>
-						<li>Game start</li>
+						<li>
+							<button
+								onClick={() => this.setState({
+									squares: Array(9).fill(null),
+									xIsNext: true,
+								})}
+							>Game start</button>
+						</li>
 					</ol>
 				</div>
 			</div>
