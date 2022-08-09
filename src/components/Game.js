@@ -32,7 +32,7 @@ class Game extends Component {
 
 	handleClick(i) {
 		const squares = this.state.squares.slice();
-		if (squares[i] || calculateWinner(squares)) {
+		if (calculateWinner(squares)) {
 			return;
 		}
 		const xIsNext = this.state.xIsNext;
